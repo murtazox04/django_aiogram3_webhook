@@ -105,7 +105,7 @@ python manage.py migrate
 
 ### 3. Run the Django Development Server
 ```bash
-python manage.py runserver
+uvicorn mybot.asgi:application --host 0.0.0.0 --port 8000
 ```
 
 ## Setting Up the Webhook
